@@ -10,11 +10,8 @@ def function (st : str ):
     x = st.split()
     print(x)
     words = len(st.split())
-    print("Number of words:", words)
+    return words
 
-function ('fine, Thank you')
-
-
-
+print("Number of words:",function('fine, Thank you'))
 
 
