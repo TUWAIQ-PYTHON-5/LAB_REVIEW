@@ -1,18 +1,19 @@
 def spliting(text):
     wordList=[]
+    wordList2=[]
+    word=""
     for letters in text:
-        word =""
-        counter = 0
         if letters == " ":
-            wordList.insert(counter,word)
-            counter += 1
+            wordList2.insert(1,word)
+            wordList.extend(wordList2)
+            wordList2=[]
+            word=""
         else:
             word += letters
-    counter += 1
-    wordList.insert(counter,word)
+    wordList2.insert(1,word)
+    wordList.extend(wordList2)
     numberOfWords = len(wordList)
+    print(wordList)
     return numberOfWords
 
-
-x = input()
-print(spliting(x))
+print(spliting("fine, Thank you"))
