@@ -8,6 +8,7 @@
 
 def seperate (list_s : str) :
     sp = list_s.split()
+    print(sp)
     word = len(list_s.split())
     return word  
 
