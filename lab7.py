@@ -1,7 +1,7 @@
 def sepaeartwords(aword :str):
     sepert=aword.rsplit(" ")
     num_word=len(sepert)
-    return sepert,num_word
+    return num_word
 
 
 
