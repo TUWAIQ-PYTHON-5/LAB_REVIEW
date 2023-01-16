@@ -4,7 +4,28 @@
 #- then, it should return the number of words in that string.
 
 #Example: 'fine, Thank you' --> 3
+'''
+def wordCount(phrase : str) ->int:
+    words = phrase.split(" ")
+    totalWords = len(words)
+    return totalWords
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 def splitFunction (txtToSeprate : str) -> str:
     cleanText:str=""
     counter1:int=0
@@ -24,13 +45,13 @@ def splitFunction (txtToSeprate : str) -> str:
                 #if (islower(rewright)
         #Testprint(cleanText)
     
-    #outPut : str = cleanText + arrow 
+    outPut : str = cleanText + arrow 
     outPut : str = cleanText + arrow + str(counter2)
     return outPut
+    #return counter2
 
 usrTxt:str=input("Enter Your Text:\n") #\n for the newline
-print(splitFunction("Hello my name is harun"))
-
+print(splitFunction(usrTxt))
 
 
 
