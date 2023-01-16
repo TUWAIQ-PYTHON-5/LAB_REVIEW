@@ -1,3 +1,7 @@
-words = ['hello', 'goodbye', 'howdy', 'hello', 'hello', 'hi', 'bye']
-words.index()
-print(words=+1)
+def word_count(phrase:str)->int:
+    words = phrase.split(" ")
+    total_words=len(words)
+    return total_words
+
+
+print(word_count("fine, thank you"))
