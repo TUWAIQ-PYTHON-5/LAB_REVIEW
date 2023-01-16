@@ -1,8 +1,8 @@
-def character (count :str):
+def character (count :str)->int:
     character = count.split(" ")
 
     num_word = len(character)
 
-    return character,num_word
+    return num_word
 
 print(character("fine Thank you"))
